@@ -9,7 +9,6 @@ import { client } from '../lib/client'
 
 export default function Home({ bannerData, previousMatchesData, upcommingMatchData }) {
 
-  console.log(upcommingMatchData)
   return (
     <div className='overflow-x-hidden bg-gray-50'>
       <Head>
@@ -23,9 +22,8 @@ export default function Home({ bannerData, previousMatchesData, upcommingMatchDa
 
       <div className="grid lg:w-9/12 gap mx-auto xl:grid-cols-3 lg:grid-cols-2 grid-cols-1">
         {previousMatchesData?.map((match) =>
-          <div className="">
-
-            <Previous key={match._id} match={match} />
+          <div key={match._id} className="">
+            <Previous match={match} />
           </div>
         )}
         <div className="order-first">

@@ -23,7 +23,7 @@ const Upcomming = ({ match }) => {
 
                     <div className="flex justify-center w-1/2">
                         <div className="flex justify-center shadow-xl bg-blue-900 py-3 px-5 w-36 rounded-xl  ">
-                            <h1 className='text-5xl text-white'>{match.ora}</h1>
+                            <h1 className="text-5xl font-bold text-white text-center">{match.ora}</h1>
                         </div>
 
                     </div>

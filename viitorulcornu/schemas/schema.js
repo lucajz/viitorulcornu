@@ -9,6 +9,7 @@ import blockContent from './blockContent'
 import previous_matches from './previous_matches'
 import banner from './banner'
 import upcomming_match from './upcomming_match'
+import blogs from './blogs'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -23,6 +24,7 @@ export default createSchema({
     previous_matches,
     banner,
     upcomming_match,
+    blogs,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     blockContent,

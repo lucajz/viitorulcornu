@@ -61,8 +61,8 @@ const Navbar = () => {
               </li>
               <li>
                 <Link href="">
-                  <h2 className="hover:text-blue-800 transition ease-out hover:scale-110 cursor-pointer">
-                    Contact
+                  <h2 className="text-white bg-blue-500 pb-1 px-2 rounded-xl transition ease-out hover:scale-110 cursor-pointer">
+                    Sign in
                   </h2>
                 </Link>
               </li>

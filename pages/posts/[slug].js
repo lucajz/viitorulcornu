@@ -2,7 +2,6 @@ import React from "react";
 import { client, urlFor } from "../../lib/client";
 import Navbar from "../../components/Navbar";
 import { PortableText } from "@portabletext/react";
-import urlBuilder from "@sanity/image-url";
 import { getImageDimensions } from "@sanity/asset-utils";
 
 const Post = ({ post }) => {

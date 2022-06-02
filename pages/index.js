@@ -6,6 +6,7 @@ import Previous from "../components/Previous";
 import Upcomming from "../components/Upcomming";
 import { client } from "../lib/client";
 import Link from "next/link";
+import Cornean from "../components/Cornean";
 
 export default function Home({
   bannerData,
@@ -41,7 +42,7 @@ export default function Home({
           Check out the news!
         </h1>
 
-        <div className="grid w-full  gap-0 mx-auto mt-10 xl:grid-cols-3 lg:grid-cols-2 grid-cols-1">
+        <div className="grid w-full  gap-0 mx-auto my-10 xl:grid-cols-3 lg:grid-cols-2 grid-cols-1">
           {postsData
             .filter((item, index) => index < 3)
             .map((post) => (
@@ -52,6 +53,9 @@ export default function Home({
               </Link>
             ))}
         </div>
+      </div>
+      <div className="">
+        <Cornean />
       </div>
 
       {/* <Footer /> */}

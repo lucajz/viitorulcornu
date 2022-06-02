@@ -3,14 +3,12 @@ import Image from "next/image";
 import { urlFor } from "../lib/client";
 
 const Banner = ({ banner }) => {
-
-
   return (
-    <div className="mt-1 flex h-[50vh] w-full lg:w-9/12 mx-auto lg:border-4 lg:rounded-b-xl lg:border-blue-500 lg:border-solid  border-blue-500 border-b-4 relative shadow-xl">
+    <div className="mt-3 z-10 flex h-[45vh] w-full lg:w-9/12 mx-auto relative shadow-2xl">
       <img
         src={urlFor(banner.mainImage)}
         alt=""
-        className="object-cover h-full w-full brightness-[60%]"
+        className="object-cover rounded-md h-full w-full brightness-[60%]"
       />
       <h1 className="absolute text-5xl font-semibold top-36 text-blue-600 font left-1/2 transform -translate-x-1/2 md:left-7 md:translate-x-1/4 md:text-6xl">
         {banner.title}

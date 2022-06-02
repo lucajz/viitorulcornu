@@ -6,7 +6,7 @@ const Cornean = () => {
     <div className="mt-3 flex flex-col h-[45vh] w-11/12 lg:w-9/12 mx-auto shadow-2xl lg:flex-row">
       <div className="relative h-full w-full lg:w-full">
         <Image
-          src="/../public/msn-city-wall.jpg"
+          src="https://d25i9r6dz2moc5.cloudfront.net/2019/10/msn-city-wall.jpeg"
           alt="banner"
           layout="fill"
           objectFit="cover"
@@ -14,7 +14,7 @@ const Cornean = () => {
       </div>
       <div className=" bg-blue-800 h-28 w-full lg:h-full lg:w-4/12">
         <div className="flex h-full justify-between items-center w-11/12 mx-auto lg:flex-col lg:justify-center lg:space-y-10 ">
-          <div className=" w-full space-y-2">
+          <div className="w-full space-y-2">
             <h1 className="text-xl lg:text-2xl xl:text-3xl text-white font-semibold">
               Become a Cornean
             </h1>

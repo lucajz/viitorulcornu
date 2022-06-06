@@ -46,7 +46,7 @@ const Post = ({ post }) => {
       <Navbar />
       <div className="lg:w-9/12 mx-auto bg-white">
         <img
-          className="h-80 w-full object-cover rounded-md border-blue-500 border-4"
+          className="h-80 w-full object-cover border-blue-500 border-4"
           src={urlFor(post.image)}
         />
         <article className="w-10/12 mx-auto">

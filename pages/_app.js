@@ -2,12 +2,14 @@ import Footer from "../components/Footer";
 import "../styles/globals.css";
 import { SessionProvider } from "next-auth/react";
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps: { session, ...pageProps } }) {
   return (
     <div className="bg-blue-50">
-      <Component {...pageProps} />
+      <SessionProvider session={session}>
+        <Component {...pageProps} />
 
-      <Footer />
+        <Footer />
+      </SessionProvider>
     </div>
   );
 }

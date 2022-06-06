@@ -8,7 +8,7 @@ const Banner = ({ banner }) => {
       <img
         src={urlFor(banner.mainImage)}
         alt=""
-        className="object-cover rounded-md h-full w-full brightness-[60%]"
+        className="object-cover lg:rounded-md h-full w-full brightness-[60%]"
       />
       <h1 className="absolute text-5xl font-semibold top-36 text-blue-600 font left-1/2 transform -translate-x-1/2 md:left-7 md:translate-x-1/4 md:text-6xl">
         {banner.title}
